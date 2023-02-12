@@ -7,7 +7,7 @@
     <title>Task 1</title>
   </head>
   <body>
-    <h1>IMAGES</h1>
+    <h1>IMAGE</h1>
   </body>
 
   <script>
@@ -17,6 +17,22 @@
                     "./images/watch2.jpg"];
 
 
-        console.log(images);            
+       
+            let image = document.createElement("img");
+            document.body.appendChild(image);
+                
+
+        let button = document.createElement("button");
+        document.body.appendChild(button);
+        button.style.width = "240px";
+        button.style.height = "80px";
+        button.innerText = "RANDOM IMAGE";
+        button.style.background = "coral";
+        button.style.fontSize = "20px";
+
+        let randomNum = Math.floor(Math.random() * images.length);
+
+        console.log(images[randomNum]);
+
   </script>
 </html>
