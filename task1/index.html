@@ -11,28 +11,31 @@
   </body>
 
   <script>
+    let images = [
+      "./images/stars.jpg",
+      "./images/shoes.webp",
+      "./images/watch2.jpg",
+    ];
 
-        let images = ["./images/stars.jpg", 
-                    "./images/shoes.webp", 
-                    "./images/watch2.jpg"];
+    let button = document.createElement("button");
+    document.body.appendChild(button);
+    button.style.width = "240px";
+    button.style.height = "80px";
+    button.innerText = "RANDOM IMAGE";
+    button.style.background = "coral";
+    button.style.fontSize = "20px";
 
+    let image = document.createElement("img");
+    document.body.appendChild(image);
+    
+   
+ 
+    let randomNum = Math.floor(Math.random() * images.length);
 
-       
-            let image = document.createElement("img");
-            document.body.appendChild(image);
-                
+    button.addEventListener("click", function () {
+        image.src = images[randomNum];
+    });
 
-        let button = document.createElement("button");
-        document.body.appendChild(button);
-        button.style.width = "240px";
-        button.style.height = "80px";
-        button.innerText = "RANDOM IMAGE";
-        button.style.background = "coral";
-        button.style.fontSize = "20px";
-
-        let randomNum = Math.floor(Math.random() * images.length);
-
-        console.log(images[randomNum]);
-
+    
   </script>
 </html>
