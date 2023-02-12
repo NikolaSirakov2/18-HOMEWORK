@@ -36,10 +36,11 @@
 
     let randomNum = Math.floor(Math.random() * images.length);
 
-    button.addEventListener("click", function () {
+     function randomPic () {
         image.src = images[randomNum];
-        
-    });
+    };
+
+    button.addEventListener("click", randomPic);
 
 
   </script>
