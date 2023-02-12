@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
     <style>
-        body {
-            display: flex;
-        }
+      body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+      }
     </style>
   </head>
-  <body>
-    
-  </body>
+  <body></body>
 
   <script>
     let images = [
@@ -22,26 +24,27 @@
       "./images/watch2.jpg",
     ];
 
-    let image = document.createElement("img");
-    document.body.appendChild(image);
-    image.style.width = "300px";
-
     let button = document.createElement("button");
     document.body.appendChild(button);
+    button.style.display = "flex"
     button.style.width = "240px";
     button.style.height = "80px";
+    button.style.justifyContent = "center";
+    button.style.alignItems = "center"
     button.innerText = "RANDOM IMAGE";
     button.style.background = "coral";
     button.style.fontSize = "20px";
 
-    let randomNum = Math.floor(Math.random() * images.length);
+    let image = document.createElement("img");
+    document.body.appendChild(image);
+    image.style.width = "300px";
+    image.style.position = "relative";
 
-     function randomPic () {
-        image.src = images[randomNum];
-    };
+    function randomPic() {
+      let randomNum = Math.floor(Math.random() * images.length);
+      image.src = images[randomNum];
+    }
 
     button.addEventListener("click", randomPic);
-
-
   </script>
 </html>
