@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
+    <style>
+        body {
+            display: flex;
+        }
+    </style>
   </head>
   <body>
-    <h1>IMAGE</h1>
+    
   </body>
 
   <script>
@@ -17,6 +22,10 @@
       "./images/watch2.jpg",
     ];
 
+    let image = document.createElement("img");
+    document.body.appendChild(image);
+    image.style.width = "300px";
+
     let button = document.createElement("button");
     document.body.appendChild(button);
     button.style.width = "240px";
@@ -25,17 +34,13 @@
     button.style.background = "coral";
     button.style.fontSize = "20px";
 
-    let image = document.createElement("img");
-    document.body.appendChild(image);
-    
-   
- 
     let randomNum = Math.floor(Math.random() * images.length);
 
     button.addEventListener("click", function () {
         image.src = images[randomNum];
+        
     });
 
-    
+
   </script>
 </html>
