@@ -33,6 +33,7 @@ text.innerText = "PET";
 
 let img = document.createElement("img");
 document.body.appendChild(img);
+img.alt = "pet image"
 img.style.height = "25%";
 img.style.width = "60%"
 
