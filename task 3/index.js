@@ -1,13 +1,10 @@
 let div = document.createElement("div");
 document.body.appendChild(div);
 
-
-
-
 let image = document.createElement("img");
 div.appendChild(image);
 image.src = "./img.jpg";
-image.style.position = "absolute";
+image.style.position = "relative";
 image.style.width = "600px";
 
 
@@ -23,8 +20,8 @@ function pressArrowKey(e) {
     bottom += 10;
     image.style.bottom = `${bottom}px`;
   } else if (e.keyCode === 40) {
-    to += 10;
-    image.style.top = `${to}px`
+    toz += 10;
+    image.style.top = `${toz}px`
   } else if (e.keyCode === 37) {
     right += 10;
     image.style.right = `${right}px`;
