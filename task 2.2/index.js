@@ -1,3 +1,9 @@
-let keybordButton = document.createElement("h1");
-document.body.appendChild(keybordButton);
-keybordButton.innerText = "Press the button!"
+let keyboardButton = document.createElement("h1");
+document.body.appendChild(keyboardButton);
+keyboardButton.innerText = "You press: ";
+
+document.body.addEventListener("keydown", logKey);
+
+function logKey(e) {
+  keyboardButton.innerText += ` ${e.key}`;
+}
