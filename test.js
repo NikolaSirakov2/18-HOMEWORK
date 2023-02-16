@@ -1,7 +1,9 @@
 var fullname = "Nik";
 
-function names () {
-    return this.fullname;
+let newName = "bill"
+
+function names (name) {
+    return name;
 }
 
-console.log(names());
+console.log(names(newName));
