@@ -9,6 +9,11 @@ Animal.prototype.bite = function () {
     return `This animal can bite!`;
 }
 
-let dog = new Animal ("Rex", 10);
+class Dog extends Animal {
 
-console.log(Animal.__proto__.__proto__);
+    constructor (name, color){
+        super(name);
+        this.color = color;
+    }
+}
+
