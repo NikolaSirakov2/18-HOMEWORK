@@ -17,3 +17,11 @@ class Dog extends Animal {
     }
 }
 
+Dog.prototype.run = function () {
+    return `Can run!`
+}
+
+let rex = new Dog ("Rex", "brown");
+
+console.log(rex.__proto__);
+console.log(rex.__proto__.__proto__);
