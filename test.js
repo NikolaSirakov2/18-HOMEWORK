@@ -16,7 +16,7 @@ const users = [
     }
 ]
 
-const namesArr = [...users];
+const namesArr = users.map(e => e.name)
 
 console.log(users);
 console.log(namesArr);
