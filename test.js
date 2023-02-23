@@ -1,9 +1,14 @@
-let duplicate = [...new Set([1,2,3,5,2,1])];
+let books = [
+    {name: "billy", autor: "Joanne Rowling"},
+    {name: "gilly", autor: "Goanne Bowling"},
+    {name: "milly", autor: "Aoanne Zowling"},
+];
+
+books.sort((a,b) => {
+    const lastName1 = a.autor.split(" ")[1];
+    const lastName2 = b.autor.split(" ")[1];
+    return lastName1 < lastName2 ? -1 : 1
+});
 
 
-
-let arr = [2,30,21,23,4];
-
-arr.sort((a,b) => a - b);
-
-console.log(arr);
+console.log(books);
