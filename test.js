@@ -17,9 +17,7 @@ const users = [
 ];
 
 const namesArr = users
-  .sort((a, b) => {
-    b.id - a.id;
-  })
+  .sort((a, b) => (a.id - b.id))
   .filter((e) => e.isActive)
   .map((user) => user.name);
 
