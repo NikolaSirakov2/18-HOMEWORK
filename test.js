@@ -1,15 +1,22 @@
-let myObj = {
-    name: "koko",
-    age: 30
-};
+const users = [
+    {
+        id: 1,
+        name: "Nik",
+        isActive: true
+    },
+    {
+        id: 1,
+        name: "Papa",
+        isActive: true
+    },
+    {
+        id: 1,
+        name: "Aron",
+        isActive: true
+    }
+]
 
-function Myfunc(ob){
-        ob = null;
+const namesArr = [...users];
 
-        return ob.name;
-}
-
-
-console.log(Myfunc(myObj));
-
-console.log(myObj);
+console.log(users);
+console.log(namesArr);
