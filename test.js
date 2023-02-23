@@ -11,13 +11,15 @@ const users = [
   },
   {
     id: 3,
-    name: "Aron",
+    name: "Ar",
     isActive: true,
   },
 ];
 
+users.sort((user1, user2) => user1.name < user2.name ? -1 : 1)
+
 const namesArr = users
-  .sort((a, b) => (a.id - b.id))
+  .sort((a, b) => (b.name - a.name))
   .filter((e) => e.isActive)
   .map((user) => user.name);
 
