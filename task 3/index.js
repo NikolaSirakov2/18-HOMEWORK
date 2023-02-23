@@ -36,3 +36,5 @@ function pressArrowKey(e) {
     image.style.left = `${y}px`;
   }
 }
+
+
