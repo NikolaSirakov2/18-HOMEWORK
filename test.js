@@ -1,27 +1,20 @@
-const users = [
-  {
-    id: 5,
-    name: "Nik",
-    isActive: true,
-  },
-  {
-    id: 2,
-    name: "Papa",
-    isActive: false,
-  },
-  {
-    id: 3,
-    name: "Ar",
-    isActive: true,
-  },
-];
+const getV = () => {
+    let count = 1;
 
-users.sort((user1, user2) => user1.name < user2.name ? -1 : 1)
+    return {
+        increase: (val=1) =>{
+        count += val;
+    },
+    getVal: () =>{
+        return count;
+    }
+}
+}
 
-const namesArr = users
-  .sort((a, b) => (b.name - a.name))
-  .filter((e) => e.isActive)
-  .map((user) => user.name);
+const test = getV();
 
-console.log(users);
-console.log(namesArr);
+console.log(test.getVal());
+test.increase();
+console.log(test.getVal());
+
+console.dir(test.getVal)
