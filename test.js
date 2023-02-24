@@ -1,10 +1,8 @@
 person = {
   name: "Nik",
-    sayName () {
+    sayName: (name) => {
         console.log(this.name);
   }
 }
 
-person.sayName();
-let local = person.sayName;
-person.local();
+person.sayName("nik");
