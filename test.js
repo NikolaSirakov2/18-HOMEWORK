@@ -2,10 +2,11 @@ function capitalize(string){
   let newString = "";
 
   for(let i = 0; i < string.length; i++){
-    if(i % 2 === 0){
-      newString += string[i].toUpperCase();
+    if(string[i] === "<" && string[i+1] === ">"){
+      newString += "</div";
+      // i += 5;
     } else {
-      newString += string[i].toLowerCase();
+      newString += string[i];
     }
   };
 
@@ -14,4 +15,4 @@ function capitalize(string){
 }
 
 
-console.log(capitalize("Heello"));
+console.log(capitalize("<div>Hello this is test!<><div>Let`s try one more time<>"));
