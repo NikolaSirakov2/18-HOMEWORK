@@ -1,18 +1,22 @@
 function capitalize(string){
-  let newString = "";
+  let arr = string.split('<div>');
+  let count = 0;
+  console.log(arr);
+  let newArr = [];
 
-  for(let i = 0; i < string.length; i++){
-    if(string[i] === "<" && string[i+1] === ">"){
-      newString += "</div";
-      // i += 5;
+  for(let i = 1; i < arr.length - 1; i++){
+    if(i % 2 !== 0){
+      newArr.push("<div>");
+      newArr.push(arr[i]);
+      newArr.push("</div>");
     } else {
-      newString += string[i];
+      newArr.push(arr[i]);
     }
   };
 
-  
-  return newString;
+  return newArr.join("");
+  // return newString;
 }
 
 
-console.log(capitalize("<div>Hello this is test!<><div>Let`s try one more time<>"));
+console.log(capitalize("<div>Hello this is test!<div><p>Paparak</p><div>Let`s try one more time<div>"));
