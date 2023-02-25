@@ -1,13 +1,8 @@
 const person = {
   name: "Nik",
-  sayName: function(){
-    return this.name;
+  sayName: () => {
+    console.log(person.name)
   }
 }
 
-console.log(person.sayName());
-let name = "Bil";
-
-let globalFunc = person.sayName;
-
-globalFunc();
+person.sayName();
