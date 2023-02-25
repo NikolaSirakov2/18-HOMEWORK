@@ -1,10 +1,10 @@
 function capitalize(string){
   let arr = string.split('<div>');
   let count = 0;
-  console.log(arr);
+  
   let newArr = [];
 
-  for(let i = 1; i < arr.length - 1; i++){
+  for(let i = 0; i < arr.length; i++){
     if(i % 2 !== 0){
       newArr.push("<div>");
       newArr.push(arr[i]);
@@ -19,4 +19,4 @@ function capitalize(string){
 }
 
 
-console.log(capitalize("<div>Hello this is test!<div><p>Paparak</p><div>Let`s try one more time<div>"));
+console.log(capitalize("<div><div><p>Hello</p><div><div>"));
