@@ -1,11 +1,16 @@
 var name = "Nik";
 
-let person = {
-  name: "Vik",
+class Person  {
+
+  constructor(name){
+  this.name = "Vik";
+  }
+
+  run () {
+    return this.name;
+  }
 }
 
-let run = () => {
-  return this.name;
-}
+
 
 run();
