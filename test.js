@@ -1,8 +1,11 @@
-const person = {
-  name: "Nik",
-  sayName: () => {
-    console.log(person.name)
-  }
+var name = "Nik";
+
+let person = {
+  name: "Vik",
 }
 
-person.sayName();
+let run = () => {
+  return this.name;
+}
+
+run();
