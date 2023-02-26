@@ -1,21 +1,13 @@
-var name = "Nik";
-
-class Person  {
-
-  constructor(name){
-  this.name = name;
+class Person {
+  constructor(name) {
+    this.name = name;
   }
 
-  stop = () => this.name;
-  
-  
-
-  run = function () {
-    this.name;
+  run = () => {
+    console.log(`${this.name} is runing!`);
   }
 }
 
-var human = new Person("Mad")
+let human = new Person("Mad");
 
-console.log(human.stop());
-console.log(run());
+human.run();
