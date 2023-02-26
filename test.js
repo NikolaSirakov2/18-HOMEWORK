@@ -3,14 +3,19 @@ var name = "Nik";
 class Person  {
 
   constructor(name){
-  this.name = "Vik";
+  this.name = name;
   }
 
-  run () {
-    return this.name;
+  stop = () => this.name;
+  
+  
+
+  run = function () {
+    this.name;
   }
 }
 
+var human = new Person("Mad")
 
-
-run();
+console.log(human.stop());
+console.log(run());
