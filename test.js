@@ -17,11 +17,17 @@ let old = {
 }
 
 const change = (num) => {
-  num.value = 3;
-  return num;
+  
+  return {
+    ...num, 
+    namez: "Nik"}
 }
 
 let newN = change(old);
 
 console.log(old);
+console.log(newN);
+
+console.log(JSON.stringify(newN));
+
 console.log(newN);
