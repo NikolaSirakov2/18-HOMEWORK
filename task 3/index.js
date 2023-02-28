@@ -7,15 +7,9 @@ image.src = "./img.jpg";
 image.style.display = "flex"
 image.style.position = "absolute";
 image.style.width = "600px";
-// image.style.top = "250px";
-// image.style.left = "700px";
 
-
-
-// let bottom = 0;
 let y = 0;
 let x = 0;
-// let right = 0;
 
 document.addEventListener("keydown", pressArrowKey);
 
@@ -36,5 +30,3 @@ function pressArrowKey(e) {
     image.style.left = `${y}px`;
   }
 }
-
-
