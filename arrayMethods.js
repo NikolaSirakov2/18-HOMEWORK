@@ -15,7 +15,8 @@ let arr = [
 // let test = `Average age = ${arr.reduce((start, e) => {
 //     return start + e.age;
 // }, 0)/arr.length}`;
-// let test = arr.find(e => e.name.length > 4)
+// let test = arr.find(e => e.name === "Nik");
+// let test = arr.sort((a,b) => a.name > b.name ? 1 : -1); MUTATE ARR!!!
 
 console.log(arr);
 console.log(test);
