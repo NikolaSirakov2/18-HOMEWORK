@@ -16,7 +16,10 @@ let arr = [
 //     return start + e.age;
 // }, 0)/arr.length}`;
 // let test = arr.find(e => e.name === "Nik");
-// let test = arr.sort((a,b) => a.name > b.name ? 1 : -1); MUTATE ARR!!!
+// let test = arr.sort((a,b) => a.name > b.name ? 1 : -1);      MUTATE ARR!!!
+// let test = matrix.flat(Infinity);
+// arr.fill("0", 2, 3);     MUTATE ARR!!!
+// let test = arr.every(e => e.age > 5);
 
 console.log(arr);
 console.log(test);
