@@ -8,6 +8,10 @@ let arr = [
     {name: "Zakary", age: 40, isActive: true},
 ];
 
-let test = arr.filter(e => e.isActive === true && e.age > 37 && e.name.length > 4);
+// let test = arr.filter(e => e.isActive === true && e.age > 37 && e.name.length > 4);
+
+let test = arr.slice().pop();
+
+console.log(arr);
 
 console.log(test);
