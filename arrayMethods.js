@@ -3,7 +3,11 @@ let arr = [
     
     {name: "Kory", age: 20, isActive: false},
     
-    {name: "Aron", age: 30, isActive: false},
+    {name: "Aron", age: 15, isActive: false},
     
-    {name: "Za", age: 30, isActive: true},
-]
+    {name: "Zakary", age: 40, isActive: true},
+];
+
+let test = arr.filter(e => e.isActive === true && e.age > 37 && e.name.length > 4);
+
+console.log(test);
