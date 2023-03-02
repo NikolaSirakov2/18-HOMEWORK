@@ -10,10 +10,10 @@ let arr = [
 
 // let test = arr.slice(2,4);
 // let test1 = arr.concat(test);
-let test = arr.map(e => ({
-    nameS: e.name, 
-    age: e.age
-}));
+let test = arr.map(e => ([
+    e.name, 
+    e.age
+]));
 
 console.log(arr);
 console.log(test);
