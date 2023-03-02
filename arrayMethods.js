@@ -10,10 +10,7 @@ let arr = [
 
 // let test = arr.slice(2,4);
 // let test1 = arr.concat(test);
-let test = arr.map(e => ([
-    e.name, 
-    e.age
-]));
+let test = arr.map((e,index) => {if(index % 2 === 0){console.log(e);console.log(index);return e.name;} else {return "";}});
 
-console.log(arr);
+// console.log(arr);
 console.log(test);
