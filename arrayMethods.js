@@ -1,26 +1,10 @@
 let arr = [
-    {name: "Nik", age: 30, isActive: true},
+    {name: "Nik", age: 30, gender: "male", isActive: true},
     
-    {name: "Kory", age: 20, isActive: false},
+    {name: "Kory", age: 20, gender: "female", isActive: false},
     
-    {name: "Aron", age: 15, isActive: false},
+    {name: "Aron", age: 15, gender: "male", isActive: false},
     
-    {name: "Zakary", age: 40, isActive: true},
+    {name: "Zakary", age: 40, gender: "male", isActive: true},
 ];
-
-// let test = arr.filter(e => e.isActive === true && e.age > 37 && e.name.length > 4);
-// let test = arr.slice(2,4);
-// let newA = test.concat(arr);
-// let test = arr.map(e => e.name)
-// let test = `Average age = ${arr.reduce((start, e) => {
-//     return start + e.age;
-// }, 0)/arr.length}`;
-// let test = arr.find(e => e.name === "Nik");
-// let test = arr.sort((a,b) => a.name > b.name ? 1 : -1);      MUTATE ARR!!!
-// let test = matrix.flat(Infinity);
-// arr.fill("0", 2, 3);     MUTATE ARR!!!
-// let test = arr.every(e => e.age > 5);
-
-console.log(arr);
-console.log(test);
 
